@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.5.0/5cf502fee702829dd00f3b7775f5a18e4d5f0473/spring-boot-configuration-processor-2.5.0.jar" />
+        </processorPath>
+        <module name="spring-in-action-ch6.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chapter1_application.spring-in-action" target="11" />
+      <module name="chapter1_application.spring-in-action.main" target="11" />
+      <module name="chapter1_application.spring-in-action.test" target="11" />
+      <module name="chapter2_web.spring-in-action" target="11" />
+      <module name="chapter2_web.spring-in-action.main" target="11" />
+      <module name="chapter2_web.spring-in-action.test" target="11" />
+      <module name="chapter3_jpa.spring-in-action" target="11" />
+      <module name="chapter3_jpa.spring-in-action.main" target="11" />
+      <module name="chapter3_jpa.spring-in-action.test" target="11" />
+      <module name="chapter4_security.spring-in-action" target="11" />
+      <module name="chapter4_security.spring-in-action.main" target="11" />
+      <module name="chapter4_security.spring-in-action.test" target="11" />
+      <module name="chapter6_restservices.spring-in-action" target="11" />
+      <module name="chapter6_restservices.spring-in-action.main" target="11" />
+      <module name="chapter6_restservices.spring-in-action.test" target="11" />
+      <module name="com.example.spring-in-action" target="11" />
+      <module name="com.example.spring-in-action.main" target="11" />
+      <module name="com.example.spring-in-action.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
