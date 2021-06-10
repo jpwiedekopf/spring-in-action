@@ -1,8 +1,0 @@
-{
-  "properties": [
-    {
-      "name": "taco.orders.pageSize",
-      "type": "java.lang.Integer",
-      "description": "The amount of orders to show to the user at once."
-  }
-] }

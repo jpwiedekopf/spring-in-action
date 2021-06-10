@@ -7,7 +7,7 @@
         <processorPath useClasspath="false">
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.5.0/5cf502fee702829dd00f3b7775f5a18e4d5f0473/spring-boot-configuration-processor-2.5.0.jar" />
         </processorPath>
-        <module name="spring-in-action-ch6.main" />
+        <module name="sia-ch6.tacocloud-web.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +29,40 @@
       <module name="com.example.spring-in-action" target="11" />
       <module name="com.example.spring-in-action.main" target="11" />
       <module name="com.example.spring-in-action.test" target="11" />
+      <module name="spring-in-action-ch1" target="11" />
+      <module name="spring-in-action-ch1.main" target="11" />
+      <module name="spring-in-action-ch1.test" target="11" />
+      <module name="spring-in-action-ch2" target="11" />
+      <module name="spring-in-action-ch2.main" target="11" />
+      <module name="spring-in-action-ch2.test" target="11" />
+      <module name="spring-in-action-ch3" target="11" />
+      <module name="spring-in-action-ch3.main" target="11" />
+      <module name="spring-in-action-ch3.test" target="11" />
+      <module name="spring-in-action-ch4" target="11" />
+      <module name="spring-in-action-ch4.main" target="11" />
+      <module name="spring-in-action-ch4.test" target="11" />
+      <module name="spring-in-action-ch5" target="11" />
+      <module name="spring-in-action-ch5.main" target="11" />
+      <module name="spring-in-action-ch5.test" target="11" />
+      <module name="spring-in-action-ch6.buildSrc" target="11" />
+      <module name="spring-in-action-ch6.buildSrc.main" target="11" />
+      <module name="spring-in-action-ch6.buildSrc.test" target="11" />
+      <module name="spring-in-action-ch6.main" target="11" />
+      <module name="spring-in-action-ch6.sia-kotlin-conventions" target="11" />
+      <module name="spring-in-action-ch6.sia-kotlin-conventions.main" target="11" />
+      <module name="spring-in-action-ch6.sia-kotlin-conventions.test" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-api" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-api.main" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-api.test" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-data" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-data.main" target="11" />
+      <module name="spring-in-action-ch6.tacocloud-data.test" target="11" />
+      <module name="spring-in-action-ch6.tacos" target="11" />
+      <module name="spring-in-action-ch6.tacos.main" target="11" />
+      <module name="spring-in-action-ch6.tacos.test" target="11" />
+      <module name="spring-in-action-ch6.test" target="11" />
+      <module name="spring-in-action-ch6_main" target="11" />
+      <module name="spring-in-action-ch6_test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

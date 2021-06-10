@@ -1,41 +1,20 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-val springVersion = "2.5.0"
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
 
 plugins {
-    id("org.springframework.boot") version "2.5.0"
-    id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    kotlin("jvm") version "1.5.10"
-    kotlin("plugin.spring") version "1.5.10"
+    id("org.springframework.boot") version "2.5.0" apply false
+    id("io.spring.dependency-management") version "1.0.11.RELEASE" apply false
+    kotlin("jvm") version "1.5.10" apply false
+    kotlin("plugin.spring") version "1.5.10" apply false
+    kotlin("plugin.jpa") version "1.5.10" apply false
+    kotlin("kapt") version "1.5.10" apply false
     kotlin("plugin.allopen") version "1.5.10"
-    kotlin("plugin.jpa") version "1.5.10"
-    kotlin("kapt") version "1.5.10"
-}
-
-group = "com.example"
-version = "0.0.1-SNAPSHOT"
-java.sourceCompatibility = JavaVersion.VERSION_11
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-security")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("org.springframework.boot:spring-boot-starter-validation")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.junit.jupiter:junit-jupiter:5.7.0")
-    developmentOnly("org.springframework.boot:spring-boot-devtools")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-    runtimeOnly("com.h2database:h2")
-    runtimeOnly("org.mariadb.jdbc:mariadb-java-client")
-    kapt("org.springframework.boot:spring-boot-configuration-processor:$springVersion")
-    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor:$springVersion")
+    id("application")
 }
 
 allOpen {
@@ -46,13 +25,32 @@ allOpen {
     annotation("javax.persistence.MappedSuperclass")
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions {
-        freeCompilerArgs = listOf("-Xjsr305=strict")
-        jvmTarget = "11"
-    }
+application {
+    mainClass.set("com.example.springinaction.tacos.TacoCloudCh6ApplicationKt")
 }
 
-tasks.withType<Test> {
-    useJUnitPlatform()
+allprojects {
+    group = "com.example"
+    version = "0.0.1-SNAPSHOT"
+
+    tasks.withType<JavaCompile> {
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
+    }
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            freeCompilerArgs = listOf("-Xjsr305=strict")
+            jvmTarget = "11"
+        }
+    }
+}
+subprojects {
+    repositories {
+        mavenCentral()
+    }
+
+    apply {
+        plugin("io.spring.dependency-management")
+    }
 }
